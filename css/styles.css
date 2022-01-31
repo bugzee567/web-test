@@ -1,0 +1,323 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    all: unset;
+}
+
+h1 {
+    color: #131821;
+    padding-left: 1rem;
+}
+
+p {
+    color: #6A707B;
+    font-size: 12pt;
+    padding-left: 1rem;
+}
+
+hr {
+	border: 0;
+	border-top: 1.5px solid #6A707B;
+    width: 70%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+
+ header {
+     width: 50%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     padding-left: 4em;
+     padding-top: 4em;
+    position: absolute;
+ }
+
+ nav {
+     width: 100%;
+     padding-left: 1vw;
+     padding-right: 1vw;
+ }
+
+ ul {
+     text-align:center;
+ }
+
+ .nav_links {
+     list-style: none;
+     padding-left: unset;
+ }
+
+ a {
+     color: #131821;
+     font-weight: bold;
+ }
+
+ a:visited {
+    text-decoration: none;
+ }
+
+ a:hover {
+    color: #4066A5;
+ }
+
+ a:active {
+     color: #1f287a;
+ }
+
+ .nav_links li {
+     display: inline-block;
+     padding-left: 2vw;
+ }
+
+ .nav_links li a {
+     color: #6A707B;
+     text-decoration: none;
+     font-weight: 500;
+ }
+
+#container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100vw;
+    height:100vh;
+ }
+
+ #bg {
+     position: absolute;
+    display: flex;
+    height: 100%;
+    max-width: 50%;
+    object-fit: cover;
+    right: 0px;
+    justify-self: right;
+ }
+
+ #subscribe {
+     margin: 30% 5% 30% 5%;
+     background-color: white;
+     position: relative;
+     padding-left: 2em;
+ }
+
+ #email-field {
+     min-width: 40vw;
+     padding-top: 3em;
+ }
+
+ #icons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ #TOS {
+     padding-left: 1em;
+     padding-top: 3em;
+ }
+ #message {
+     color: #ff0000;
+ }
+
+ .small-header-logo {
+     display: none;
+ }
+
+ .fab {
+     color: #E3E3E4;
+ }
+
+ .rounded-button {
+     width: 30px;
+     height: 30px;
+     background: none;
+     color: #ffffff;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     border-radius: 50%;
+     border: 1px solid #E3E3E4;
+     text-decoration: none;
+     margin-left: 1em;
+     margin-right: 1em;
+     transition: background 0.5s;
+ }
+
+ .rounded-button:active {
+     transition: background 0s;
+ }
+
+ label {
+     display: inline-flex;
+    position: relative;
+    align-items: center;
+    width: 115%;
+ }
+
+ input[type="email"]{
+     border: 1px solid #E3E3E4;
+     border-left: 3px solid #4066A5;
+     width: 100%;
+     height: 40px;
+     padding: 0;
+ }
+
+ input:hover {
+    border-right: 1px solid #4066A5;
+    border-top: 1px solid #4066A5;
+    border-bottom: 1px solid #4066A5;
+ }
+
+ input:focus {
+    outline: none;
+ }
+
+ button {
+     background: white;
+     position: absolute;
+     top: 0.8;
+     bottom: 0.8;
+     right: 0.8pt;
+     height: 38px;
+     width: 50px;
+     border: none;
+ }
+
+
+ .rounded-button.fb:hover {
+     border: none;
+     background: #414ec0;
+ }
+
+  .rounded-button.ig:hover {
+     border: none;
+     background: #a02261;
+ }
+
+  .rounded-button.tw:hover {
+     border: none;
+     background: #588ed4;
+ }
+
+  .rounded-button.yt:hover {
+     border: none;
+     background: #ad2e2e;
+ }
+
+  .rounded-button.fb:active {
+     border: none;
+     background: #2d3585;
+ }
+
+  .rounded-button.ig:active {
+     border: none;
+     background: #7c1a4b;
+ }
+
+  .rounded-button.tw:active {
+     border: none;
+     background: #3d6497;
+ }
+
+  .rounded-button.yt:active {
+     border: none;
+     background: #7e2121;
+ }
+
+ .fa-arrow-right {
+     color: #E3E3E4;
+ }
+
+ @media screen and (max-width: 1300px){
+
+header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: unset;
+    padding-top: unset;  
+}  
+
+header img {
+    padding-top: 5em;
+}
+ 
+nav {
+    padding-left: unset;
+ }
+
+ label {
+     width: 115%;
+ }
+
+ .nav_links{
+    padding-left: unset;
+ }
+
+.nav_links li {
+    padding-left: 1vw;
+ }
+ }
+
+  @media screen and (max-width: 800px){
+
+header {
+    position: absolute;
+    max-height: 10%;
+    margin-top: 2vh;
+    flex-wrap:nowrap;
+    justify-content: center;
+    width: 100%;
+    align-items: unset;  
+} 
+
+header img {
+    padding-top:unset;
+}
+
+ ul {
+     text-align:right;
+ }
+
+ label {
+     width: 100%;
+ }
+
+ hr {
+     width: 80%;
+ }
+
+#container {
+    grid-template-columns: 100%;
+ }
+
+ #bg {
+    display: absolute;
+    top: 10%;
+    min-width: 100%;
+    max-height: 90%;
+ }
+
+#div-content {
+    position: relative;
+     height: 20%;
+     margin-right: 2vw;
+ }
+
+ #subscribe {
+     padding-left: 1em;
+     padding-right: 1em;
+ }
+
+.small-header-logo {
+    display: block;
+    padding-left: 2vw;
+}
+
+.logo {
+    display: none;
+}
+  }
